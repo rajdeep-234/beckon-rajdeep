@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/brands.min.css"
+      integrity="sha512-WxpJXPm/Is1a/dzEdhdaoajpgizHQimaLGL/QqUIAjIihlQqlPQb1V9vkGs9+VzXD7rgI6O+UsSKl4u5K36Ydw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./output/style.css" />
+    <!-- <link rel="stylesheet" href="./src/style.css" /> -->
+  </head>
+  <body class="bg-white">
+    <header>
+      <nav class="z-50">
+        <div class="container">
+          <div
+            class="flex flex-col md:flex-row md:justify-between items-center px-10"
+          >
+            <div class="flex justify-between w-full md:w-auto">
+              <div>
+                <a href="#">
+                  <img
+                    src="./images/nav-logo.png"
+                    alt="beacon"
+                    class="w-20 lg:w-full"
+                  />
+                </a>
+              </div>
+              <button class="md:hidden" id="menu">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+            </div>
+            <div
+              class="hidden flex md:flex flex-col items-center md:flex-row gap-8"
+              id="nav-list"
+            >
+              <a class="text-darkblue hover:text-slate-500 transition" href="#"
+                >Philosophy</a
+              >
+              <a class="text-darkblue hover:text-slate-500 transition" href="#"
+                >Asset Classes</a
+              >
+              <a class="text-darkblue hover:text-slate-500 transition" href="#"
+                >About Us</a
+              >
+              <a
+                class="text-darkblue px-3 py-2 bg-secondary rounded-4xl hover:text-slate-500 transition"
+                href="#"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- <h1 class="text-3xl font-bold underline">Hello world!</h1> -->
+    <main>
+      <section id="banner" class="relative z-[-1] top-[-10px] md:top-[-30px]">
+        <div class="container">
+          <div
+            class="bg-[url('../images/hero-img.png')] h-screen bg-cover bg-center bg-no-repeat rounded-2xl overflow-hidden"
+          >
+            <div class="max-w-[1142px] m-auto w-full px-1 md:px-0">
+              <div
+                class="max-w-[984px] m-auto w-full text-center pt-[80px] mb-12"
+              >
+                <h1 class="mb-5">
+                  Beacon One Capital Where Vision Meets Opportunity.
+                </h1>
+                <p class="mb-6">
+                  At Beacon One Capital, we don’t just invest in properties—we
+                  transform them. From breathing new life into rundown spaces to
+                  building cutting-edge developments, we turn underutilized
+                  assets into dynamic centers for business and community growth.
+                  We’re not just revitalizing properties—we’re fueling the local
+                  economy, creating jobs, and helping communities thrive.
+                </p>
+                <a class="btn" href="#">Contact Us</a>
+              </div>
+              <div class="rounded-2xl border border-white backdrop-blur-xs p-3">
+                <figure class="rounded-2xl overflow-hidden">
+                  <img src="./images/banner.jpg" alt="" />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="unlock" class="common-padding">
+        <div class="container">
+          <div class="max-w-[1142px] m-auto w-full px-1 md:px-0">
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 place-items-center gap-x-16 gap-y-4"
+            >
+              <div class="h-full">
+                <h2 class="mb-[68px] text-center md:text-start">
+                  Unlock the potential of your property.
+                </h2>
+                <figure class="w-full">
+                  <img
+                    class="rounded-2xl h-full w-full"
+                    src="./images/img-1.png"
+                    alt=""
+                  />
+                </figure>
+              </div>
+              <div class="h-full text-center md:text-start">
+                <figure class="mb-[62px] w-full">
+                  <img
+                    class="rounded-2xl w-full"
+                    src="./images/img-2.png"
+                    alt=""
+                  />
+                </figure>
+                <p class="mb-[76px] text-center md:text-justify">
+                  At Beacon One Capital, we’re more than just investors—we’re
+                  community builders. Over the years, we’ve focused on creating
+                  spaces where businesses can flourish and communities can grow.
+                  Our projects span the Northeast, Midwest, and Southeast, where
+                  we work hand-in-hand with local businesses, contractors, and
+                  investors to transform properties and shape the future of
+                  commercial real estate.
+                </p>
+                <a class="btn" href="#">Get in touch today!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="services"
+        class="common-padding bg-gradient-to-b from-[#CFC6D3] via-[rgba(207,198,211,.87)] via-[rgba(207,198,211,.51)] to-[rgba(207,198,211,.52)]"
+      >
+        <div class="container">
+          <h2 class="text-center mb-5">
+            Let’s build something extraordinary together.
+          </h2>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-4 gap-x-4"
+          >
+            <div class="rounded-xl overflow-hidden w-full">
+              <img class="w-full" src="./images/card-1.png" alt="" />
+            </div>
+            <div
+              class="flex flex-col gap-4 justify-between rounded-xl bg-secondary px-3 pt-6 pb-2"
+            >
+              <div class="">
+                <h3 class="mb-4 text-darkblue">Lorem Ipsum Is</h3>
+                <p>
+                  Lorem Ipsum&nbsp;is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the
+                </p>
+              </div>
+              <a class="inline-flex gap-2 items-center text-darkblue" href="#"
+                ><span>Contact Us</span
+                ><i class="fa-solid fa-arrow-right-long"></i
+              ></a>
+            </div>
+            <div class="rounded-xl overflow-hidden w-full">
+              <img class="w-full" src="./images/card-2.png" alt="" />
+            </div>
+            <div
+              class="flex flex-col gap-4 justify-between rounded-xl bg-primary px-3 pt-6 pb-2"
+            >
+              <div>
+                <h3 class="mb-4 text-white">Lorem Ipsum Is</h3>
+                <p class="text-white">
+                  Lorem Ipsum&nbsp;is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the
+                </p>
+              </div>
+              <a class="inline-flex gap-2 items-center text-white" href="#"
+                ><span>Contact Us</span
+                ><i class="fa-solid fa-arrow-right-long"></i
+              ></a>
+            </div>
+            <div
+              class="flex flex-col gap-4 justify-between rounded-xl bg-primary px-3 pt-6 pb-2"
+            >
+              <div>
+                <h3 class="mb-4 text-white">Lorem Ipsum Is</h3>
+                <p class="text-white">
+                  Lorem Ipsum&nbsp;is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the
+                </p>
+              </div>
+              <a class="inline-flex gap-2 items-center text-white" href="#"
+                ><span>Contact Us</span
+                ><i class="fa-solid fa-arrow-right-long"></i
+              ></a>
+            </div>
+            <div class="rounded-xl overflow-hidden w-full">
+              <img class="w-full" src="./images/card-3.png" alt="" />
+            </div>
+            <div
+              class="flex flex-col gap-4 justify-between rounded-xl bg-secondary px-3 pt-6 pb-2"
+            >
+              <div class="">
+                <h3 class="mb-4 text-darkblue">Lorem Ipsum Is</h3>
+                <p>
+                  Lorem Ipsum&nbsp;is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the
+                </p>
+              </div>
+              <a class="inline-flex gap-2 items-center text-darkblue" href="#"
+                ><span>Contact Us</span
+                ><i class="fa-solid fa-arrow-right-long"></i
+              ></a>
+            </div>
+            <div class="rounded-xl overflow-hidden w-full bg-amber-100">
+              <img class="w-full" src="./images/card-4.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="testimonial" class="common-padding relative">
+        <div class="container">
+          <div class="max-w-[1142px] m-auto w-full px-1 md:px-0 text-center">
+            <span
+              class="inline-block px-2 py-1 border border-slate-400 rounded-xl mb-3"
+              >Testimonials</span
+            >
+            <h2 class="mb-5">What people say about Us</h2>
+
+            <div
+              class="swiper mySwiper relative swiper-initialized swiper-horizontal swiper-backface-hidden"
+            >
+              <div
+                class="swiper-wrapper"
+                id="swiper-wrapper-68c9c7b09a5b3bda"
+                aria-live="polite"
+              >
+                <div
+                  class="swiper-slide swiper-slide-active"
+                  role="group"
+                  aria-label="1 / 3"
+                  style="width: 1142px"
+                >
+                  <div class="max-w-[768px] w-full m-auto">
+                    <div class="flex justify-center items-center gap-6 mb-5">
+                      <figure><img src="./images/test-1.png" alt="" /></figure>
+                      <figure><img src="./images/test-2.png" alt="" /></figure>
+                      <figure><img src="./images/test-3.png" alt="" /></figure>
+                      <figure><img src="./images/test-4.png" alt="" /></figure>
+                      <figure><img src="./images/test-5.png" alt="" /></figure>
+                    </div>
+                    <p class="mb-4">
+                      I was planning on doing a DIY project at home since i had
+                      more time now adays and didn't want people visiting my
+                      home for health concerns. C-Line experts ordered the
+                      materials, walked my step by step on what to do. whenever
+                      i got stuck, i just did the Quick call and an expert
+                      helped me solve that issue in minutes! I saved $2400 on my
+                      project and learned a new skill!
+                    </p>
+                    <p class="text-primary font-medium">Rita Brown</p>
+                    <p class="mb-6">VP Marketing at Bowl</p>
+                  </div>
+                </div>
+
+                <div
+                  class="swiper-slide swiper-slide-next"
+                  role="group"
+                  aria-label="2 / 3"
+                  style="width: 1142px"
+                >
+                  <div class="max-w-[768px] w-full m-auto">
+                    <div class="flex justify-center items-center gap-6 mb-5">
+                      <figure><img src="./images/test-1.png" alt="" /></figure>
+                      <figure><img src="./images/test-2.png" alt="" /></figure>
+                      <figure><img src="./images/test-3.png" alt="" /></figure>
+                      <figure><img src="./images/test-4.png" alt="" /></figure>
+                      <figure><img src="./images/test-5.png" alt="" /></figure>
+                    </div>
+                    <p class="mb-4">
+                      I was planning on doing a DIY project at home since i had
+                      more time now adays and didn't want people visiting my
+                      home for health concerns. C-Line experts ordered the
+                      materials, walked my step by step on what to do. whenever
+                      i got stuck, i just did the Quick call and an expert
+                      helped me solve that issue in minutes! I saved $2400 on my
+                      project and learned a new skill!
+                    </p>
+                    <p class="text-primary font-medium">Alice Brown</p>
+                    <p>VP Marketing at Bowl</p>
+                  </div>
+                </div>
+
+                <div
+                  class="swiper-slide"
+                  role="group"
+                  aria-label="3 / 3"
+                  style="width: 1142px"
+                >
+                  <div class="max-w-[768px] w-full m-auto">
+                    <div class="flex justify-center items-center gap-6 mb-5">
+                      <figure><img src="./images/test-1.png" alt="" /></figure>
+                      <figure><img src="./images/test-2.png" alt="" /></figure>
+                      <figure><img src="./images/test-3.png" alt="" /></figure>
+                      <figure><img src="./images/test-4.png" alt="" /></figure>
+                      <figure><img src="./images/test-5.png" alt="" /></figure>
+                    </div>
+                    <p class="mb-4">
+                      I was planning on doing a DIY project at home since i had
+                      more time now adays and didn't want people visiting my
+                      home for health concerns. C-Line experts ordered the
+                      materials, walked my step by step on what to do. whenever
+                      i got stuck, i just did the Quick call and an expert
+                      helped me solve that issue in minutes! I saved $2400 on my
+                      project and learned a new skill!
+                    </p>
+                    <p class="text-primary font-medium">Bob Doe</p>
+                    <p>VP Marketing at Bowl</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="absolute top-[90%] lg:top-1/2 -translate-1/2 left-[30px] flex justify-center items-center bg-white w-[50px] h-[50px] rounded-full shadow-lg text-slate-500 text-xl cursor-pointer prev swiper-button-disabled"
+                tabindex="-1"
+                role="button"
+                aria-label="Previous slide"
+                aria-disabled="true"
+              >
+                <i class="fa-solid fa-chevron-left"></i>
+              </div>
+              <div
+                class="absolute top-[90%] lg:top-1/2 -translate-1/2 right-[5px] lg:right-[30px] flex justify-center items-center bg-primary w-[50px] h-[50px] rounded-full text-white text-xl cursor-pointer next"
+                tabindex="0"
+                role="button"
+                aria-label="Next slide"
+              >
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+              <span
+                class="swiper-notification"
+                aria-live="assertive"
+                aria-atomic="true"
+              ></span>
+            </div>
+          </div>
+
+          <div
+            class="absolute bottom-[-120px] max-w-[945px] w-full left-1/2 -translate-1/2 bg-[#8A737D] rounded-lg p-8"
+          >
+            <div
+              class="flex flex-col sm:flex-row justify-between items-center gap-y-3"
+            >
+              <h2 class="capitalize text-white">Get In touch with us</h2>
+              <div class="flex items-center gap-4">
+                <figure><img src="./images/arrow-icon.png" alt="" /></figure>
+                <a class="text-darkblue bg-white py-3 px-4 rounded-2xl" href="#"
+                  >Contact Us</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-darkblue pt-[90px] pb-[20px]">
+      <div class="container">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 place-items-center gap-y-5 gap-x-4 mb-8"
+        >
+          <a href="#"><img src="./images/foot-logo-img.png" alt="" /></a>
+          <div>
+            <p
+              class="text-[18px] text-white mb-5 text-white font-medium relative inline-block after:content-[''] after:absolute after:left-0 after:-bottom-2 after:w-full sm:after:w-12 after:h-[2px] after:bg-white"
+            >
+              Quick Links
+            </p>
+            <div class="flex flex-col items-center sm:items-start gap-2">
+              <a class="text-white hover:text-lightGrey transition" href="#"
+                >Philosophy</a
+              >
+              <a class="text-white hover:text-lightGrey transition" href="#"
+                >Asset Classes</a
+              >
+              <a class="text-white hover:text-lightGrey transition" href="#"
+                >About US</a
+              >
+              <a class="text-white hover:text-lightGrey transition" href="#"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+          <div>
+            <p
+              class="text-[18px] text-white mb-5 text-white font-medium relative inline-block after:content-[''] after:absolute after:left-0 after:-bottom-2 after:w-full sm:after:w-12 after:h-[2px] after:bg-white"
+            >
+              Additional Links
+            </p>
+            <div class="flex flex-col items-center sm:items-start gap-2">
+              <a class="text-white hover:text-lightGrey transition" href="#"
+                >Terms of Use</a
+              >
+              <a class="text-white hover:text-lightGrey transition" href="#"
+                >Privacy Policy</a
+              >
+              <a class="text-white hover:text-lightGrey transition" href="#"
+                >Terms and Conditions</a
+              >
+            </div>
+          </div>
+          <div>
+            <p
+              class="text-[18px] text-white mb-5 text-white font-medium relative inline-block after:content-[''] after:absolute after:left-0 after:-bottom-2 after:w-full sm:after:w-12 after:h-[2px] after:bg-white"
+            >
+              Subscribe Our Newsletter
+            </p>
+            <div class="flex flex-col gap-5">
+              <form class="flex items-center gap-2">
+                <input
+                  class="border border-white px-3 py-3 rounded-[36px]"
+                  type="email"
+                  placeholder="Enter Your Email"
+                />
+                <button
+                  class="bg-primary w-[40px] h-[40px] rounded-full inline-flex justify-center items-center text-white text-xl hover:text-black hover:bg-white transition"
+                >
+                  <i class="fa-solid fa-paper-plane"></i>
+                </button>
+              </form>
+              <div class="flex justify-center sm:justify-start gap-2">
+                <a
+                  href="#"
+                  class="w-[40px] h-[40px] rounded-full bg-white inline-flex justify-center items-center text-black text-xl hover:text-white hover:bg-primary transition"
+                  ><i class="fa-brands fa-x-twitter"></i
+                ></a>
+                <a
+                  href="#"
+                  class="w-[40px] h-[40px] rounded-full bg-white inline-flex justify-center items-center text-black text-xl hover:text-white hover:bg-primary transition"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a
+                  href="#"
+                  class="w-[40px] h-[40px] rounded-full bg-white inline-flex justify-center items-center text-black text-xl hover:text-white hover:bg-primary transition"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+                <a
+                  href="#"
+                  class="w-[40px] h-[40px] rounded-full bg-white inline-flex justify-center items-center text-black text-xl hover:text-white hover:bg-primary transition"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-white pt-5">
+        <div class="container text-center">
+          <p>
+            © 2024
+            <a class="hover:text-white transition" href="#"
+              >Beacon One Capital</a
+            >. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
